@@ -50,6 +50,8 @@ docker-compose -f /root/wiki.yml up -d
 ![image](https://github.com/user-attachments/assets/1b3ab529-a60d-4df9-844e-78b3b044aee9)
 
 с клиента подключаемся по ssh на br-srv и забираем файл настройки
+scp student@hq-cli:'/home/student/Загрузки/LocalSettings.php' /root/LocalSettings.php
+
 ![image](https://github.com/user-attachments/assets/79587138-beac-4977-909b-2434edeed1b2)
 
 далее в файле /root/wiki.yml убираем коммент со строки 
