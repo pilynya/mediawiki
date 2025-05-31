@@ -47,6 +47,7 @@ docker-compose -f /root/wiki.yml up -d
 ![image](https://github.com/user-attachments/assets/51c84ab4-64be-4ae3-b94c-f25e6159beaf)
 
 пароль: WikiP@ssw0rd
+
 ![image](https://github.com/user-attachments/assets/1b3ab529-a60d-4df9-844e-78b3b044aee9)
 
 с клиента подключаемся по ssh на br-srv и забираем файл настройки
@@ -55,9 +56,10 @@ scp student@hq-cli:'/home/student/Загрузки/LocalSettings.php' /root/Loca
 ![image](https://github.com/user-attachments/assets/79587138-beac-4977-909b-2434edeed1b2)
 
 далее в файле /root/wiki.yml убираем коммент со строки 
+
 ![image](https://github.com/user-attachments/assets/926c8f2c-4bba-4a2c-a900-9d2554b9a1ac)
 
-перечитываем конфик вики
+перечитываем конфиг вики
 docker-compose -f /root/wiki.yml up -d
 на клиенте проверяем настроенную вики http://192.168.150.2:8080
 
